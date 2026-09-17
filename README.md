@@ -3,6 +3,9 @@
 Portable public Sphinx documentation for DROID reward models and robot-policy
 post-training.
 
+Live site:
+[g0kul6.github.io/gokuls-droid-posttraining](https://g0kul6.github.io/gokuls-droid-posttraining/)
+
 This site is intentionally separate from the lab operator handbook. It contains
 no interactive terminals, robot UI, private network configuration, or runtime
 backend.
