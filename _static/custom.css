@@ -1,0 +1,90 @@
+:root {
+  --droid-green: #245c4f;
+  --droid-green-soft: #e7f3ef;
+  --droid-amber: #8a5a00;
+  --droid-amber-soft: #fff3d2;
+  --droid-blue: #245a86;
+  --droid-blue-soft: #e8f2fb;
+  --droid-grey-soft: #eef1f4;
+}
+
+.hero {
+  border: 1px solid var(--color-background-border);
+  border-radius: 18px;
+  padding: clamp(1.4rem, 4vw, 3rem);
+  margin: 0 0 2rem;
+  background:
+    radial-gradient(circle at top right, rgba(36, 92, 79, 0.18), transparent 45%),
+    var(--color-background-secondary);
+}
+
+.hero h1 {
+  font-size: clamp(2rem, 5vw, 3.4rem);
+  line-height: 1.05;
+  margin-top: 0;
+}
+
+.hero .tagline {
+  font-size: 1.15rem;
+  max-width: 48rem;
+}
+
+.maturity {
+  display: inline-block;
+  border-radius: 999px;
+  font-size: 0.72rem;
+  font-weight: 750;
+  letter-spacing: 0.035em;
+  padding: 0.2rem 0.55rem;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.maturity-validated {
+  color: var(--droid-green);
+  background: var(--droid-green-soft);
+}
+
+.maturity-upstream {
+  color: var(--droid-blue);
+  background: var(--droid-blue-soft);
+}
+
+.maturity-planned {
+  color: var(--droid-amber);
+  background: var(--droid-amber-soft);
+}
+
+.maturity-roadmap {
+  color: var(--color-foreground-secondary);
+  background: var(--droid-grey-soft);
+}
+
+.method-card {
+  border-left: 4px solid var(--droid-green);
+  padding: 0.8rem 1rem;
+  margin: 1rem 0;
+  background: var(--color-background-secondary);
+}
+
+.method-card p:last-child {
+  margin-bottom: 0;
+}
+
+.important-number {
+  font-size: 1.4rem;
+  font-weight: 750;
+}
+
+code {
+  overflow-wrap: anywhere;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --droid-green-soft: #153c32;
+    --droid-amber-soft: #493510;
+    --droid-blue-soft: #17364d;
+    --droid-grey-soft: #2c3137;
+  }
+}
